@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{79F1D29E-F294-3EE9-B218-260812F39206}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libgsasl</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)lib\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(SolutionDir)..\Temp\$(SolutionName)\$(ProjectName)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;src;gl</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling />
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;HAVE_CONFIG_H=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+    </ClCompile>
+    
+    
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <AdditionalLibraryDirectories />
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;src;gl</AdditionalIncludeDirectories>
+      <ExceptionHandling />
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_CONFIG_H=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <DebugInformationFormat />
+    </ClCompile>
+    
+    
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <AdditionalLibraryDirectories />
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="gl\gc-gnulib.c" />
+    <ClCompile Include="gl\printf-parse.c" />
+    <ClCompile Include="gl\c-ctype.c" />
+    <ClCompile Include="gl\float.c" />
+    <ClCompile Include="gl\printf-args.c" />
+    <ClCompile Include="gl\hmac-sha1.c" />
+    <ClCompile Include="gl\itold.c" />
+    <ClCompile Include="gl\hmac-md5.c" />
+    <ClCompile Include="gl\gc-pbkdf2-sha1.c" />
+    <ClCompile Include="gl\md5.c" />
+    <ClCompile Include="gl\base64.c">
+      <ObjectFileName>$(IntDir)/gl/base64.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="gl\memxor.c" />
+    <ClCompile Include="gl\sha1.c" />
+    <ClCompile Include="openid20\client.c">
+      <ObjectFileName>$(IntDir)/openid20/client.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="openid20\mechinfo.c">
+      <ObjectFileName>$(IntDir)/openid20/mechinfo.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="openid20\server.c">
+      <ObjectFileName>$(IntDir)/openid20/server.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="anonymous\client.c">
+      <ObjectFileName>$(IntDir)/anonymous/client.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="anonymous\mechinfo.c">
+      <ObjectFileName>$(IntDir)/anonymous/mechinfo.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="anonymous\server.c">
+      <ObjectFileName>$(IntDir)/anonymous/server.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="saml20\client.c">
+      <ObjectFileName>$(IntDir)/saml20/client.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="saml20\mechinfo.c">
+      <ObjectFileName>$(IntDir)/saml20/mechinfo.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="saml20\server.c">
+      <ObjectFileName>$(IntDir)/saml20/server.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="scram\parser.c">
+      <ObjectFileName>$(IntDir)/scram/parser.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="scram\printer.c">
+      <ObjectFileName>$(IntDir)/scram/printer.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="scram\tokens.c" />
+    <ClCompile Include="scram\client.c">
+      <ObjectFileName>$(IntDir)/scram/client.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="scram\mechinfo.c">
+      <ObjectFileName>$(IntDir)/scram/mechinfo.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="scram\server.c">
+      <ObjectFileName>$(IntDir)/scram/server.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="scram\validate.c">
+      <ObjectFileName>$(IntDir)/scram/validate.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\free.c">
+      <ObjectFileName>$(IntDir)/src/free.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\supportp.c" />
+    <ClCompile Include="src\init.c" />
+    <ClCompile Include="src\mechtools.c" />
+    <ClCompile Include="src\error.c" />
+    <ClCompile Include="src\property.c" />
+    <ClCompile Include="src\done.c" />
+    <ClCompile Include="src\callback.c" />
+    <ClCompile Include="src\xstart.c" />
+    <ClCompile Include="src\xfinish.c" />
+    <ClCompile Include="src\version.c" />
+    <ClCompile Include="src\xstep.c" />
+    <ClCompile Include="src\mechname.c" />
+    <ClCompile Include="src\xcode.c" />
+    <ClCompile Include="src\crypto.c" />
+    <ClCompile Include="src\doxygen.c" />
+    <ClCompile Include="src\suggest.c" />
+    <ClCompile Include="src\saslprep.c" />
+    <ClCompile Include="src\listmech.c" />
+    <ClCompile Include="src\register.c" />
+    <ClCompile Include="src\base64.c">
+      <ObjectFileName>$(IntDir)/src/base64.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\md5pwd.c" />
+    <ClCompile Include="external\client.c">
+      <ObjectFileName>$(IntDir)/external/client.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="external\mechinfo.c">
+      <ObjectFileName>$(IntDir)/external/mechinfo.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="external\server.c">
+      <ObjectFileName>$(IntDir)/external/server.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="securid\client.c">
+      <ObjectFileName>$(IntDir)/securid/client.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="securid\mechinfo.c">
+      <ObjectFileName>$(IntDir)/securid/mechinfo.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="securid\server.c">
+      <ObjectFileName>$(IntDir)/securid/server.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="plain\client.c">
+      <ObjectFileName>$(IntDir)/plain/client.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="plain\mechinfo.c">
+      <ObjectFileName>$(IntDir)/plain/mechinfo.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="plain\server.c">
+      <ObjectFileName>$(IntDir)/plain/server.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="cram-md5\client.c">
+      <ObjectFileName>$(IntDir)/cram-md5/client.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="cram-md5\challenge.c" />
+    <ClCompile Include="cram-md5\mechinfo.c">
+      <ObjectFileName>$(IntDir)/cram-md5/mechinfo.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="cram-md5\server.c">
+      <ObjectFileName>$(IntDir)/cram-md5/server.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="cram-md5\digest.c" />
+    <ClCompile Include="digest-md5\client.c">
+      <ObjectFileName>$(IntDir)/digest-md5/client.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="digest-md5\digesthmac.c" />
+    <ClCompile Include="digest-md5\free.c">
+      <ObjectFileName>$(IntDir)/digest-md5/free.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="digest-md5\getsubopt.c" />
+    <ClCompile Include="digest-md5\mechinfo.c">
+      <ObjectFileName>$(IntDir)/digest-md5/mechinfo.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="digest-md5\nonascii.c" />
+    <ClCompile Include="digest-md5\parser.c">
+      <ObjectFileName>$(IntDir)/digest-md5/parser.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="digest-md5\printer.c">
+      <ObjectFileName>$(IntDir)/digest-md5/printer.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="digest-md5\qop.c" />
+    <ClCompile Include="digest-md5\server.c">
+      <ObjectFileName>$(IntDir)/digest-md5/server.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="digest-md5\session.c" />
+    <ClCompile Include="digest-md5\test-parser.c" />
+    <ClCompile Include="digest-md5\validate.c">
+      <ObjectFileName>$(IntDir)/digest-md5/validate.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="login\client.c">
+      <ObjectFileName>$(IntDir)/login/client.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="login\mechinfo.c">
+      <ObjectFileName>$(IntDir)/login/mechinfo.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="login\server.c">
+      <ObjectFileName>$(IntDir)/login/server.c.obj</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

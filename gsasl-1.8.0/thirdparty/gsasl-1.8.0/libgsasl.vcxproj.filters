@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="gl\gc-gnulib.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\printf-parse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\c-ctype.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\float.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\printf-args.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\hmac-sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\itold.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\hmac-md5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\gc-pbkdf2-sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\md5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\base64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\memxor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gl\sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openid20\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openid20\mechinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openid20\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="anonymous\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="anonymous\mechinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="anonymous\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="saml20\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="saml20\mechinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="saml20\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scram\parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scram\printer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scram\tokens.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scram\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scram\mechinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scram\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scram\validate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\free.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\supportp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mechtools.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\property.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\done.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\callback.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xstart.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xfinish.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xstep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mechname.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xcode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\doxygen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\suggest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\saslprep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\listmech.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\register.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\md5pwd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\mechinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="external\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="securid\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="securid\mechinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="securid\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plain\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plain\mechinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plain\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cram-md5\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cram-md5\challenge.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cram-md5\mechinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cram-md5\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cram-md5\digest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\digesthmac.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\free.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\getsubopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\mechinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\nonascii.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\printer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\qop.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\session.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\test-parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="digest-md5\validate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login\client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login\mechinfo.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login\server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A8504F6F-7DC0-3361-927D-A7AC92E548CC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
